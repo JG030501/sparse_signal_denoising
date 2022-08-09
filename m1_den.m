@@ -49,12 +49,17 @@ y = x + sigma_w * randn(size(x));   % Noisy signal
 % y(250) = 1;
 
 % Denoising using CNN
-CNN_num = 2; % number of CNN to be tested
-CNN = fun_loop{CNN_num};
-x_hat_CNN = CNN(y);
+for i = 1:2
+    CNN = fun_loop{i};
+    x_hat_CNN = CNN(y);
+    [negation_error(i), time_reversal_error(i)] = calculate_error(y, CNN); 
+end
+negation_error = [negation_error(1); negation_error(2)]
+time_reversal_error = [time_reversal_error(1); time_reversal_error(2)]
 
-[error_neg, error_tr] = calculate_error(y, CNN);
-T = table(negation_error,time_reversal_error)
+network = ["Constrained CNN";"Unconstrained CNN"]
+T = table(row_names,negation_error,time_reversal_error)
+
 fig = uifigure;
 uit = uitable(fig,'Data',T)
 
@@ -121,7 +126,7 @@ hold off;
 set(gca,'Xscale', 'log')
 box off
 
-legend_list = {'Noisy', 'MMSE', 'c0', 'uc0', 'c1', 'uc1', 'c2', 'uc2', 'c3','uc3', 'c4', 'uc4'}
+legend_list = {'Noisy', 'MMSE', 'c0', 'uc0', 'c1', 'uc1'}
 legend(legend_list, 'Interpreter', 'latex', 'FontSize', FontSize, 'Location', 'se');
 
 xlabel('$\rho$', 'Interpreter', 'latex', 'FontSize', FontSize);
