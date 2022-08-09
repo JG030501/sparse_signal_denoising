@@ -7,6 +7,13 @@ Convolutional Neural Networks (CNNs) have recently gained increased recognition 
 **Denoised signals**
 
 **Filter plots**
+***Unconstrained CNN***
+
+![6x2_unconstrained](https://user-images.githubusercontent.com/88984657/183673685-c4b93b67-657d-4300-a60e-2a89f219e131.svg)
+
+***Constrained CNN***
+
+![6x2_constrained](https://user-images.githubusercontent.com/88984657/183673804-54359960-f14a-4d4c-836b-e4106b517b0c.svg)
 
 **SNR vs Rho**
 
