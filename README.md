@@ -11,6 +11,7 @@ Convolutional Neural Networks (CNNs) have recently gained increased recognition 
 
 
 #### Zero error achieved
+![Screenshot 2022-08-09 at 11 14 50 AM](https://user-images.githubusercontent.com/88984657/183688406-f890305d-aeb6-46d9-a0ae-7dc07053c9ab.png)
 
 ## Filter plots
 
