@@ -15,19 +15,15 @@ Convolutional Neural Networks (CNNs) have recently gained increased recognition 
 ## Filter plots
 
 #### Unconstrained CNN
-
-![6x2_unconstrained](https://user-images.githubusercontent.com/88984657/183673685-c4b93b67-657d-4300-a60e-2a89f219e131.svg)
+![6x2_unconstrained (1)](https://user-images.githubusercontent.com/88984657/183676779-9eb63a14-533c-44e1-a85e-214bec729d07.svg)
 
 #### Constrained CNN
-
-![6x2_constrained](https://user-images.githubusercontent.com/88984657/183673804-54359960-f14a-4d4c-836b-e4106b517b0c.svg)
+![6x2_constrained (1)](https://user-images.githubusercontent.com/88984657/183676288-63be3471-b5b4-444e-878c-b10080059182.svg)
 
 ## Performance Analysis
 
 #### SNR vs Rho
-
 ![snr_rho_1](https://user-images.githubusercontent.com/88984657/183673201-820548c8-f6a4-41d6-8ded-374dc61771cd.svg)
 
 #### SNR vs Sigma
-
 ![snr_sigma (1)](https://user-images.githubusercontent.com/88984657/183673159-0f385d5b-e879-422b-920f-696c17530ce1.svg)
