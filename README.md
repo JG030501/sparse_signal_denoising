@@ -10,6 +10,8 @@ Convolutional Neural Networks (CNNs) have recently gained increased recognition 
 
 #### Time reversal
 
+#### Zero error achieved
+
 #### Negation
 
 ## Filter plots
