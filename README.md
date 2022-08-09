@@ -10,5 +10,8 @@ Convolutional Neural Networks (CNNs) have recently gained increased recognition 
 
 **SNR vs Rho**
 
+![snr_rho_1](https://user-images.githubusercontent.com/88984657/183673201-820548c8-f6a4-41d6-8ded-374dc61771cd.svg)
+
 **SNR vs Sigma**
 
+![snr_sigma (1)](https://user-images.githubusercontent.com/88984657/183673159-0f385d5b-e879-422b-920f-696c17530ce1.svg)
