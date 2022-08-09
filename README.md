@@ -12,7 +12,7 @@ Convolutional Neural Networks (CNNs) have recently gained increased recognition 
 
 #### Zero error achieved
 ##### Constrained Network vs Unconstrained Network
-![Screenshot 2022-08-09 at 12 06 21 PM](https://user-images.githubusercontent.com/88984657/183702292-c9283cf6-1676-47c5-85c6-2a62b4a1a56c.png)
+![Screenshot 2022-08-09 at 12 19 50 PM](https://user-images.githubusercontent.com/88984657/183704992-ea736a4a-fcaa-4007-8488-5353a25e104d.png)
 
 ## Filter plots
 
