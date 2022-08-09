@@ -53,7 +53,10 @@ CNN_num = 2; % number of CNN to be tested
 CNN = fun_loop{CNN_num};
 x_hat_CNN = CNN(y);
 
-[error_neg, error_tr] = calculate_error(y, CNN)
+[error_neg, error_tr] = calculate_error(y, CNN);
+T = table(negation_error,time_reversal_error)
+fig = uifigure;
+uit = uitable(fig,'Data',T)
 
 %plot clean and noisy signal
 figure(10)
@@ -140,7 +143,6 @@ sigma_x = 5;      % signal std
 
 SNR_y = SNR_out.SNR_y;
 SNR_mmse = SNR_out.SNR_x_mmse;
-
 
 % Plotting SNR vs sigma 
 FontSize = 20;
