@@ -7,7 +7,7 @@ Convolutional Neural Networks (CNNs) have recently gained increased recognition 
 ## Signal denoising
 
 #### Clean vs Noisy
-
+![signals_ex.svg](https://github.com/yuliagrajewska/sparse_signal_denoising/blob/main/singals_ex.svg)
 #### Time reversal
 
 #### Negation
