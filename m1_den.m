@@ -58,7 +58,7 @@ negation_error = [negation_error(1); negation_error(2)]
 time_reversal_error = [time_reversal_error(1); time_reversal_error(2)]
 
 network = ["Constrained CNN";"Unconstrained CNN"]
-T = table(row_names,negation_error,time_reversal_error)
+T = table(network,negation_error,time_reversal_error)
 
 fig = uifigure;
 uit = uitable(fig,'Data',T)
@@ -126,7 +126,7 @@ hold off;
 set(gca,'Xscale', 'log')
 box off
 
-legend_list = {'Noisy', 'MMSE', 'c0', 'uc0', 'c1', 'uc1'}
+legend_list = {'Noisy', 'MMSE', 'Constrained CNN','Unconstrained CNN'}
 legend(legend_list, 'Interpreter', 'latex', 'FontSize', FontSize, 'Location', 'se');
 
 xlabel('$\rho$', 'Interpreter', 'latex', 'FontSize', FontSize);
@@ -167,7 +167,7 @@ hold off;
 set(gca,'Xscale', 'log')
 box off
 
-legend_list = {'Noisy', 'MMSE', 'L = 3, 4x4x4','L = 3, 6x4x4','L = 4, 6x2x2', 'L = 3, 6x2x2'};
+legend_list = {'Noisy', 'MMSE', 'Constrained CNN', 'Unconstrained CNN'};
 legend(legend_list, 'Interpreter', 'latex', 'FontSize', 12);
 
 xlabel('$\sigma_w$', 'Interpreter', 'latex', 'FontSize', 12);
