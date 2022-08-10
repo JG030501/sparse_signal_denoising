@@ -28,9 +28,9 @@ function filters_plot_2(model_mc, fig_count)
             K = (length(h_temp) - 1)/2; xK = -K:K;
             stem(xK, h_temp, colors(1), 'LineWidth', LineWidth, 'MarkerSize', MarkerSize);
             if K ~= 0
-                xlim([-K-k_extra, K+k_extra])
+                xlim([-K-k_extra, K+k_extra]);
             end
-            ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p])
+            ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p]);
             title(strcat('$h^{(1)}_{', num2str(i), '1}$'),'Interpreter','latex','FontSize',FontSize);
         end
         
@@ -44,9 +44,9 @@ function filters_plot_2(model_mc, fig_count)
                 K = (length(h_temp) - 1)/2; xK = -K:K;
                 stem(xK, h_temp,  colors(2), 'LineWidth', LineWidth, 'MarkerSize', MarkerSize);
                 if K ~= 0
-                    xlim([-K-k_extra, K+k_extra])
+                    xlim([-K-k_extra, K+k_extra]);
                 end
-                ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p])
+                ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p]);
                 title(strcat('$h^{(2)}_{', num2str(j), num2str(i), '}$'),'Interpreter','latex','FontSize',FontSize);
             end
         end
@@ -60,9 +60,9 @@ function filters_plot_2(model_mc, fig_count)
             K = (length(h_temp) - 1)/2; xK = -K:K;
             stem(xK, h_temp,  colors(3), 'LineWidth', LineWidth, 'MarkerSize', MarkerSize);
             if K ~= 0
-                xlim([-K-k_extra, K+k_extra])
+                xlim([-K-k_extra, K+k_extra]);
             end
-            ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p])
+            ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p]);
                 
             title(strcat('$h^{(3)}_{1', num2str(j), '}$'),'Interpreter','latex','FontSize',FontSize);
         end
@@ -86,10 +86,10 @@ function filters_plot_2(model_mc, fig_count)
             K = (length(h_temp) - 1)/2; xK = -K:K;
             stem(xK, h_temp,  colors(3), 'LineWidth', LineWidth, 'MarkerSize', MarkerSize);
             if K ~= 0
-                xlim([-K-k_extra, K+k_extra])
+                xlim([-K-k_extra, K+k_extra]);
             end
             ylim([-0.5 1.5])
-            ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p])
+            ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p]);
             title(strcat('$h^{(1)}_{', num2str(i), '1}$'),'Interpreter','latex','FontSize',FontSize);
         end
         
@@ -100,10 +100,10 @@ function filters_plot_2(model_mc, fig_count)
                 K = (length(h_temp) - 1)/2; xK = -K:K;
                 stem(xK, h_temp,  colors(2), 'LineWidth', LineWidth, 'MarkerSize', MarkerSize);
                 if K ~= 0
-                    xlim([-K, K])
+                    xlim([-K, K]);
                 end
                 ylim([-0.5 1.5])
-                ylim([min(h_temp)-0.1, max(h_temp)+0.1])
+                ylim([min(h_temp)-0.1, max(h_temp)+0.1]);
                 title(strcat('$h^{(',num2str(2),')}_{', num2str(j), num2str(i), '}$'),'Interpreter','latex','FontSize',FontSize);
             end
         end
@@ -115,11 +115,11 @@ function filters_plot_2(model_mc, fig_count)
                 K = (length(h_temp) - 1)/2; xK = -K:K;
                 stem(xK, h_temp,  colors(1), 'LineWidth', LineWidth, 'MarkerSize', MarkerSize);
                 if K ~= 0
-                    xlim([-K, K])
+                    xlim([-K, K]);
                 end
-                ylim([-0.5 1.5])
+                ylim([-0.5 1.5]);
 
-                ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p])
+                ylim([min(h_temp)-plt_eps_n, max(h_temp)+plt_eps_p]);
                 title(strcat('$h^{(',num2str(3),')}_{', num2str(j), num2str(i), '}$'),'Interpreter','latex','FontSize',FontSize);
             end
         end
@@ -131,9 +131,9 @@ function filters_plot_2(model_mc, fig_count)
             K = (length(h_temp) - 1)/2; xK = -K:K;
             stem(xK, h_temp,  colors(3), 'LineWidth', LineWidth, 'MarkerSize', MarkerSize);
             if K ~= 0
-                xlim([-K-k_extra, K+k_extra])
+                xlim([-K-k_extra, K+k_extra]);
             end
-            ylim([min(h_temp)-0.1, max(h_temp)+0.1])
+            ylim([min(h_temp)-0.1, max(h_temp)+0.1]);
             title(strcat('$h^{(', num2str(args.L), ')}_{1', num2str(j), '}$'),'Interpreter','latex','FontSize',FontSize);
         end
         
