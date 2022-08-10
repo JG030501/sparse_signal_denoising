@@ -54,11 +54,11 @@ for i = 1:2
     x_hat_CNN = CNN(y);
     [negation_error(i), time_reversal_error(i)] = calculate_error(y, CNN); 
 end
-negation_error = [negation_error(1); negation_error(2)]
-time_reversal_error = [time_reversal_error(1); time_reversal_error(2)]
+negation_error = [negation_error(1); negation_error(2)];
+time_reversal_error = [time_reversal_error(1); time_reversal_error(2)];
 
 network = ["Constrained CNN";"Unconstrained CNN"]
-T = table(network,negation_error,time_reversal_error)
+T = table(network,negation_error,time_reversal_error);
 
 fig = uifigure;
 uit = uitable(fig,'Data',T)
