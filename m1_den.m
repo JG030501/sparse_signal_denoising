@@ -103,7 +103,7 @@ SNR_mmse = SNR_out.SNR_x_mmse;
 FontSize = 14;
 LineWidth = 1.5;
 
-figure(figcount)
+figure(1)
 clf 
 x_points_10 = [0.099, 0.099, 0.101, 0.101]; 
 y_points = [0, 30, 30, 0];
@@ -152,7 +152,7 @@ SNR_mmse = SNR_out.SNR_x_mmse;
 % Plotting SNR vs sigma 
 FontSize = 20;
 LineWidth = 2;
-figure(figcount)
+figure(2)
 clf
 x_points = [0.5, 0.5, 1.5, 1.5];
 y_points = [0, max(SNR_mmse), max(SNR_mmse), 0];
