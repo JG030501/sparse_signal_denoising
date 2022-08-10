@@ -1,6 +1,6 @@
 # Interpretability and Generalization in Sparse Signal Denoising
 
-*User guide:* Run the m1_den.m file on your local machine. 
+**User guide:** Run the m1_den.m file on your local machine. 
 
 ## Abstract
 
