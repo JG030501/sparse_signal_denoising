@@ -18,9 +18,9 @@ function [rho, SNR_out] = compute_SNR_rho(L, sigma_x, sigma_w, fun_loop)
 
 Nr = 1e3;     % Number of realizations: 1e3
 
-min_rho = 0.01;  % min noise std range
-max_rho = 0.5;  % max noise std range
-num_rho = 100;  % number of noise std points in the range: 100
+min_rho = 0.01;  % min rho std range
+max_rho = 0.5;  % max rho std range
+num_rho = 100;  % number of rho std points in the range: 100
 
 %% Initialization
 
@@ -35,7 +35,7 @@ SNR_x_hat_vals = nan(nmethods, num_rho, Nr);
 %% Computation
 
 for i = 1:num_rho
-    % loop over noise levels
+    % loop over rho levels
     fprintf('progress = %0.0f/100 \n', i/num_rho*100);
 
     for j = 1:Nr
