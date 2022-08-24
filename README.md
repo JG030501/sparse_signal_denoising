@@ -2,9 +2,9 @@
 
 **User guide:** 
 
-Run the m1_den.m file on your local machine. 
-To obtain SNR vs Rho curves: Run m3_curves_rho.m
-To obtain SNR vs Sigma curves: Run m3_cures_sigma.m
+- Run the m1_den.m file on your local machine to obtain the filters and denoised signals. 
+- To obtain SNR vs Rho curves: Run m3_curves_rho.m
+- To obtain SNR vs Sigma curves: Run m3_cures_sigma.m
 
 ## Abstract
 
